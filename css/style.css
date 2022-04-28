@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-family-1);
 }
 
 :root{
@@ -15,14 +16,18 @@
 
   --font-color:rgb(26, 26, 26);
 
-  --border-radios-1:1rem;
-  --border-radios-2:1.25rem;
-  --border-radios-3:1.5rem;
-  --border-radios-4:2rem;
+  --border-radios-1:.25rem;
+  --border-radios-2:.5rem;
+  --border-radios-3:1rem;
+  --border-radios-4:1.5rem;
 
-  --padding-1:1rem;
-  --padding-2:1.25rem;
-  --padding-3:1.5rem;
+  --padding-1:.5rem;
+  --padding-2:1rem;
+  --padding-3:1.25rem;
+  --padding-4:1.5rem;
+
+  --font-family-1:'Ubuntu', sans-serif;
+  --font-family-2:'Square Peg', cursive;
 }
 
 .prim-Bg{
@@ -47,5 +52,21 @@
 
 .muted-text{
   color: rgb(83, 83, 83);
+}
+
+.active{
+  color: var(--primary-color);
+  font-weight: 500;
+  position: relative;
+  
+}
+.active::after{
+  content: '';
+  background-color: var(--primary-color);
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  left: 0;
 }
 
