@@ -19,6 +19,7 @@
     />
     <title>Class-A-News.com</title>
   </head>
+
   <body>
     <nav class="prim-Bg">
       <div class="right">
@@ -50,6 +51,33 @@
       </ul>
     </nav>
 
+    <main>
+      <section class="input">
+        <div class="searchTypeChoice">
+          <label for="ch-country">search news based on country</label>
+          <input type="radio" name="searchTypeChoice" id="ch-country" />
+          <label for="ch-keyword">search news based on keyword</label>
+          <input type="radio" name="searchTypeChoice" id="ch-keyword" />
+        </div>
+
+        <div class="countrySearch">
+          <label for="country">Select country</label>
+          <select name="country" id="country">
+            <option value="in">India</option>
+            <option value="us">U.S</option>
+            <option value="cn">Canada</option>
+          </select>
+        </div>
+
+        <div class="keywordSearch">
+          <label for="keyWordInput">Search with a key word</label>
+          <input type="text" id="keyWordInput" />
+        </div>
+
+      </section>
+    </main>
+
     <script src="js/app.js"></script>
+    <script src="js/htmlLogic.js"></script>
   </body>
 </html>
