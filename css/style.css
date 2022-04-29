@@ -20,7 +20,7 @@ body{
 
   --shadow-color: rgba(0, 0, 0, 0.74);
 
-  --font-color: rgba(51, 51, 51, 0.897);
+  --font-color: rgb(41, 41, 41);
 
   --border-radios-1: 0.25rem;
   --border-radios-2: 0.5rem;
@@ -59,7 +59,8 @@ body{
 }
 
 .muted-text {
-  color: rgba(83, 83, 83, 0.603);
+  color: var(--font-color);
+  opacity: 60%;
 }
 
 .active {
