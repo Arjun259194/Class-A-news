@@ -8,9 +8,9 @@
 :root{
   --primary-background-color:aliceblue;
   --secondary-background-color:hsl(209, 100%, 94%);
-  --primary-color:rgb(255, 99, 94);
-  --secondary-color:rgb(60, 255, 158);
-  --third-color:rgb(124, 94, 255);
+  --primary-color:#ff635e;
+  --secondary-color:#80ffbf;
+  --third-color:#7c5eff;
 
   --shadow-color:rgba(0, 0, 0, 0.74);
 
@@ -70,3 +70,22 @@
   left: 0;
 }
 
+.primary-btn{
+  padding: .5rem;
+  background: linear-gradient(0.4turn,var(--primary-color),var(--third-color));
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+
+.primary-btn:hover{
+  border-radius: .5rem;
+  transition: border-radius 500ms ease;
+}
+
+.primary-btn:active{
+  transform: scale(0.9);
+  transition: transform 200ms ease;
+}
