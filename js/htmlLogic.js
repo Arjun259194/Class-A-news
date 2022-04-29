@@ -7,7 +7,6 @@ let countrySearch = document.querySelector('.countrySearch');
 
 console.log(chCountry,chKeyword,keywordSearch,countrySearch);
 
-keywordSearch.style.display = "none";
 countrySearch.style.display = "none";
 
 
