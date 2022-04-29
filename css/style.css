@@ -6,6 +6,10 @@
   font-family: var(--font-family-1);
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /**-------------ROOT VARIABLES-------------*/
 :root {
   --primary-background-color: #f0f8ff;
@@ -55,7 +59,7 @@
 }
 
 .muted-text {
-  color: rgb(83, 83, 83);
+  color: rgba(83, 83, 83, 0.603);
 }
 
 .active {

@@ -134,3 +134,40 @@ main .input .keywordSearch input{
 
 /**--------------------------END OF INPUT SECTION--------------------------*/
 
+/**------------------------------NEWS SECTION------------------------------*/
+
+main .news-feed{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  gap: 1rem;
+  background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
+}
+
+main .news-feed article{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
+  border-radius: 1rem;
+}
+
+main .news-feed article > *{
+  margin: .5rem 0;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+main .news-feed article img{
+  width: minmax(50%,85%);
+}
+
+main .news-feed article div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5rem;
+}
+
+main .news-feed article div span{
+  text-align:left;
+}
