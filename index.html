@@ -10,14 +10,8 @@
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Square+Peg&family=Ubuntu:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet" />
     <title>Class-A-News.com</title>
   </head>
 
@@ -25,34 +19,34 @@
     <nav class="prim-Bg">
       <div class="right">
         <img src="img/android-chrome-192x192.png" alt="website logo 'CA'" />
-        <h1>
-          <span class="prim-color">C</span><small>lass</small
-          ><span class="third-color">A</span><small>news.com</small>
-        </h1>
+        <h1><span class="prim-color">C</span><small>lass</small><span class="third-color">A</span><small>news.com</small></h1>
       </div>
       <ul>
         <li>
-          <a href="index.html" class="active"
-            ><span class="material-symbols-outlined"> home </span
-            ><span>Home</span></a
-          >
+          <a href="index.html" class="active"><span class="material-symbols-outlined"> home </span><span>Home</span></a>
         </li>
         <li>
-          <a href="pages/about.html"
-            ><span class="material-symbols-outlined"> info </span
-            ><span>About</span></a
-          >
+          <a href="pages/about.html"><span class="material-symbols-outlined"> info </span><span>About</span></a>
         </li>
         <li>
-          <a href="pages/contact.html"
-            ><span class="material-symbols-outlined"> contact_support </span
-            ><span>Help</span></a
-          >
+          <a href="pages/contact.html"><span class="material-symbols-outlined"> contact_support </span><span>Help</span></a>
         </li>
       </ul>
     </nav>
 
     <main>
+      <section class="head-title">
+        <h2>Stay aware of the world</h2>
+        <p class="head-subTitle">
+          Welcome to
+          <span class="under-lined"><span class="prim-color">C</span>lass<span class="third-color">A</span>news.com</span>
+        </p>
+        <p>
+          We let you search for news from all around the world. You can search for news based on country or any given key word. To know how to get started it click
+          <span class="prim-color under-lined">"About"</span> on the top right corner, if you want to contact us you can go to <span class="third-color under-lined">"Help"</span> int the top right
+          corner. To start you can select which way you want to search with the two button given below.
+        </p>
+      </section>
       <section class="input">
         <div class="searchTypeChoice">
           <div>
@@ -61,8 +55,6 @@
             <button id="ch-country" class="primary-btn">country search</button>
           </div>
           <div>
-            <!-- <label for="ch-keyword">keyword search</label>
-            <input type="radio" name="searchTypeChoice" id="ch-keyword" /> -->
             <button id="ch-keyword" class="primary-btn">keyword search</button>
           </div>
         </div>
@@ -82,6 +74,159 @@
           <input type="text" id="keyWordInput" />
           <button class="fetchBtn">Fetch News</button>
         </div>
+      </section>
+
+      <section class="news-feed">
+        <article>
+          <img src="img/img-1.jpg" alt="" />
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi voluptatum tempora! Laboriosam aperiam, harum adipisci ullam consequuntur eos nemo!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque error adipisci nulla dignissimos nobis, minima accusamus tenetur iste praesentium suscipit minus totam temporibus
+            nostrum tempora perferendis libero. Commodi rem ratione at minima quidem. Labore cupiditate fuga eaque aut aperiam sequi dicta veniam numquam repellat corporis officiis, nobis mollitia a
+            similique?
+          </p>
+          <div>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <a href="#"><button class="primary-btn">More</button></a>
+            <span class="news-source muted-text">XYZ-news</span>
+          </div>
+        </article>
+        <article>
+          <img src="img/img-1.jpg" alt="" />
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi voluptatum tempora! Laboriosam aperiam, harum adipisci ullam consequuntur eos nemo!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque error adipisci nulla dignissimos nobis, minima accusamus tenetur iste praesentium suscipit minus totam temporibus
+            nostrum tempora perferendis libero. Commodi rem ratione at minima quidem. Labore cupiditate fuga eaque aut aperiam sequi dicta veniam numquam repellat corporis officiis, nobis mollitia a
+            similique?
+          </p>
+          <div>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <a href="#"><button class="primary-btn">More</button></a>
+            <span class="news-source muted-text">XYZ-news</span>
+          </div>
+        </article>
+        <article>
+          <img src="img/img-1.jpg" alt="" />
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi voluptatum tempora! Laboriosam aperiam, harum adipisci ullam consequuntur eos nemo!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque error adipisci nulla dignissimos nobis, minima accusamus tenetur iste praesentium suscipit minus totam temporibus
+            nostrum tempora perferendis libero. Commodi rem ratione at minima quidem. Labore cupiditate fuga eaque aut aperiam sequi dicta veniam numquam repellat corporis officiis, nobis mollitia a
+            similique?
+          </p>
+          <div>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <a href="#"><button class="primary-btn">More</button></a>
+            <span class="news-source muted-text">XYZ-news</span>
+          </div>
+        </article>
+        <article>
+          <img src="img/img-1.jpg" alt="" />
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi voluptatum tempora! Laboriosam aperiam, harum adipisci ullam consequuntur eos nemo!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque error adipisci nulla dignissimos nobis, minima accusamus tenetur iste praesentium suscipit minus totam temporibus
+            nostrum tempora perferendis libero. Commodi rem ratione at minima quidem. Labore cupiditate fuga eaque aut aperiam sequi dicta veniam numquam repellat corporis officiis, nobis mollitia a
+            similique?
+          </p>
+          <div>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <a href="#"><button class="primary-btn">More</button></a>
+            <span class="news-source muted-text">XYZ-news</span>
+          </div>
+        </article>
+        <article>
+          <img src="img/img-1.jpg" alt="" />
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi voluptatum tempora! Laboriosam aperiam, harum adipisci ullam consequuntur eos nemo!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque error adipisci nulla dignissimos nobis, minima accusamus tenetur iste praesentium suscipit minus totam temporibus
+            nostrum tempora perferendis libero. Commodi rem ratione at minima quidem. Labore cupiditate fuga eaque aut aperiam sequi dicta veniam numquam repellat corporis officiis, nobis mollitia a
+            similique?
+          </p>
+          <div>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <a href="#"><button class="primary-btn">More</button></a>
+            <span class="news-source muted-text">XYZ-news</span>
+          </div>
+        </article>
+        <article>
+          <img src="img/img-1.jpg" alt="" />
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi voluptatum tempora! Laboriosam aperiam, harum adipisci ullam consequuntur eos nemo!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque error adipisci nulla dignissimos nobis, minima accusamus tenetur iste praesentium suscipit minus totam temporibus
+            nostrum tempora perferendis libero. Commodi rem ratione at minima quidem. Labore cupiditate fuga eaque aut aperiam sequi dicta veniam numquam repellat corporis officiis, nobis mollitia a
+            similique?
+          </p>
+          <div>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <a href="#"><button class="primary-btn">More</button></a>
+            <span class="news-source muted-text">XYZ-news</span>
+          </div>
+        </article>
+        <article>
+          <img src="img/img-1.jpg" alt="" />
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi voluptatum tempora! Laboriosam aperiam, harum adipisci ullam consequuntur eos nemo!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque error adipisci nulla dignissimos nobis, minima accusamus tenetur iste praesentium suscipit minus totam temporibus
+            nostrum tempora perferendis libero. Commodi rem ratione at minima quidem. Labore cupiditate fuga eaque aut aperiam sequi dicta veniam numquam repellat corporis officiis, nobis mollitia a
+            similique?
+          </p>
+          <div>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <a href="#"><button class="primary-btn">More</button></a>
+            <span class="news-source muted-text">XYZ-news</span>
+          </div>
+        </article>
+        <article>
+          <img src="img/img-1.jpg" alt="" />
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi voluptatum tempora! Laboriosam aperiam, harum adipisci ullam consequuntur eos nemo!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque error adipisci nulla dignissimos nobis, minima accusamus tenetur iste praesentium suscipit minus totam temporibus
+            nostrum tempora perferendis libero. Commodi rem ratione at minima quidem. Labore cupiditate fuga eaque aut aperiam sequi dicta veniam numquam repellat corporis officiis, nobis mollitia a
+            similique?
+          </p>
+          <div>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <a href="#"><button class="primary-btn">More</button></a>
+            <span class="news-source muted-text">XYZ-news</span>
+          </div>
+        </article>
+        <article>
+          <img src="img/img-1.jpg" alt="" />
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi voluptatum tempora! Laboriosam aperiam, harum adipisci ullam consequuntur eos nemo!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque error adipisci nulla dignissimos nobis, minima accusamus tenetur iste praesentium suscipit minus totam temporibus
+            nostrum tempora perferendis libero. Commodi rem ratione at minima quidem. Labore cupiditate fuga eaque aut aperiam sequi dicta veniam numquam repellat corporis officiis, nobis mollitia a
+            similique?
+          </p>
+          <div>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <a href="#"><button class="primary-btn">More</button></a>
+            <span class="news-source muted-text">XYZ-news</span>
+          </div>
+        </article>
+        <article>
+          <img src="img/img-1.jpg" alt="" />
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi voluptatum tempora! Laboriosam aperiam, harum adipisci ullam consequuntur eos nemo!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque error adipisci nulla dignissimos nobis, minima accusamus tenetur iste praesentium suscipit minus totam temporibus
+            nostrum tempora perferendis libero. Commodi rem ratione at minima quidem. Labore cupiditate fuga eaque aut aperiam sequi dicta veniam numquam repellat corporis officiis, nobis mollitia a
+            similique?
+          </p>
+          <div>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <span class="muted-text">Lorem, ipsum dolor.</span>
+            <a href="#"><button class="primary-btn">More</button></a>
+            <span class="news-source muted-text">XYZ-news</span>
+          </div>
+        </article>
       </section>
     </main>
 

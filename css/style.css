@@ -1,67 +1,74 @@
-*{
+/**-------------GLOBAL STYLING-------------*/
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-family-1);
 }
 
-:root{
-  --primary-background-color:aliceblue;
-  --secondary-background-color:hsl(209, 100%, 94%);
-  --primary-color:#ff635e;
-  --secondary-color:#80ffbf;
-  --third-color:#7c5eff;
-
-  --shadow-color:rgba(0, 0, 0, 0.74);
-
-  --font-color:rgb(26, 26, 26);
-
-  --border-radios-1:.25rem;
-  --border-radios-2:.5rem;
-  --border-radios-3:1rem;
-  --border-radios-4:1.5rem;
-
-  --padding-1:.5rem;
-  --padding-2:1rem;
-  --padding-3:1.25rem;
-  --padding-4:1.5rem;
-
-  --font-family-1:'Ubuntu', sans-serif;
-  --font-family-2:'Square Peg', cursive;
+body{
+  overflow-x: hidden;
 }
 
-.prim-Bg{
+/**-------------ROOT VARIABLES-------------*/
+:root {
+  --primary-background-color: #f0f8ff;
+  --secondary-background-color: #add6fd;
+  --primary-color: #ff635e;
+  --secondary-color: #80ffbf;
+  --third-color: #7c5eff;
+
+  --shadow-color: rgba(0, 0, 0, 0.74);
+
+  --font-color: rgba(51, 51, 51, 0.897);
+
+  --border-radios-1: 0.25rem;
+  --border-radios-2: 0.5rem;
+  --border-radios-3: 1rem;
+  --border-radios-4: 1.5rem;
+
+  --padding-1: 0.5rem;
+  --padding-2: 1rem;
+  --padding-3: 1.25rem;
+  --padding-4: 1.5rem;
+
+  --font-family-1: "Ubuntu", sans-serif;
+  --font-family-2: "Square Peg", cursive;
+}
+
+/**------------------UTILITY CLASSIS------------------*/
+
+.prim-Bg {
   background-color: var(--primary-background-color);
 }
 
-.sec-Bg{
+.sec-Bg {
   background-color: var(--secondary-background-color);
 }
 
-.prim-color{
+.prim-color {
   color: var(--primary-color);
 }
 
-.sec-color{
+.sec-color {
   color: var(--secondary-color);
 }
 
-.third-color{
+.third-color {
   color: var(--third-color);
 }
 
-.muted-text{
-  color: rgb(83, 83, 83);
+.muted-text {
+  color: rgba(83, 83, 83, 0.603);
 }
 
-.active{
+.active {
   color: var(--primary-color);
   font-weight: 500;
   position: relative;
-  
 }
-.active::after{
-  content: '';
+.active::after {
+  content: "";
   background-color: var(--primary-color);
   position: absolute;
   width: 100%;
@@ -70,22 +77,41 @@
   left: 0;
 }
 
-.primary-btn{
-  padding: .5rem;
-  background: linear-gradient(0.4turn,var(--primary-color),var(--third-color));
+.primary-btn {
+  padding: 0.5rem;
+  background: linear-gradient(
+    0.4turn,
+    var(--primary-color),
+    var(--third-color)
+  );
   color: var(--secondary-color);
   border: none;
   border-radius: 1rem;
   cursor: pointer;
 }
 
-
-.primary-btn:hover{
-  border-radius: .5rem;
+.primary-btn:hover {
+  border-radius: 0.5rem;
   transition: border-radius 500ms ease;
 }
 
-.primary-btn:active{
+.primary-btn:active {
   transform: scale(0.9);
   transition: transform 200ms ease;
 }
+
+.under-lined {
+  position: relative;
+}
+
+.under-lined::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  background-color: var(--secondary-color);
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 2px);
+}
+

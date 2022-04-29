@@ -3,11 +3,11 @@
   margin: .5rem;
   padding:.5rem;
   background: linear-gradient(0.4turn,var(--secondary-color),var(--third-color));
-  border: none;
   border-radius: 1rem;
   cursor: pointer;
   border: var(--primary-color) solid 1px;
   color: whitesmoke;
+  border: none;
 }
 
 .fetchBtn:hover{
@@ -20,6 +20,43 @@
   transition: transform 200ms ease;
 }
 
+/**--------------------HEAD-TITLE------------------------*/
+
+main .head-title{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-background-color);
+}
+
+main .head-title > *{
+  margin: .25rem 0;
+}
+
+main .head-title h2{
+  font-family: var(--font-family-2);
+  font-size: 4rem;
+  color: var(--third-color);
+}
+
+main .head-title .head-subTitle,
+main .head-title .head-subTitle > *,
+main .head-title .head-subTitle > * > *{
+  font-size: 2rem;
+  font-family: var(--font-family-2);
+  font-weight: 900;
+}
+
+main .head-title p:not(.head-subTitle){
+  line-height: 1.5rem;
+  max-width: 80ch;
+  text-align: center;
+}
+
+/**--------------------HEAD-TITLE-END------------------------*/
+
+/**-------------------------INPUT SECTION-------------------------*/
 main .input{
   padding: .5rem;
   display: flex;
@@ -97,3 +134,52 @@ main .input .keywordSearch input{
 
 /**--------------------------END OF INPUT SECTION--------------------------*/
 
+/**------------------------------NEWS SECTION------------------------------*/
+
+main .news-feed{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  gap: 1rem;
+  background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
+}
+
+main .news-feed article{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
+  border-radius: 1rem;
+  position: relative;
+}
+
+main .news-feed article > *{
+  margin: .5rem 0;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+main .news-feed article img{
+  min-width: 50%;
+  max-width: 85%;
+  height: auto;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+main .news-feed article div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .news-feed article div span{
+  text-align:left;
+}
+
+main .news-feed article div .news-source{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: .5rem;
+}
