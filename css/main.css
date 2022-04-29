@@ -3,11 +3,11 @@
   margin: .5rem;
   padding:.5rem;
   background: linear-gradient(0.4turn,var(--secondary-color),var(--third-color));
-  border: none;
   border-radius: 1rem;
   cursor: pointer;
   border: var(--primary-color) solid 1px;
   color: whitesmoke;
+  border: none;
 }
 
 .fetchBtn:hover{
@@ -150,6 +150,7 @@ main .news-feed article{
   align-items: center;
   background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
   border-radius: 1rem;
+  position: relative;
 }
 
 main .news-feed article > *{
@@ -159,15 +160,26 @@ main .news-feed article > *{
 }
 
 main .news-feed article img{
-  width: minmax(50%,85%);
+  min-width: 50%;
+  max-width: 85%;
+  height: auto;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 
 main .news-feed article div{
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 main .news-feed article div span{
   text-align:left;
+}
+
+main .news-feed article div .news-source{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: .5rem;
 }
