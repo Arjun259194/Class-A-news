@@ -2,12 +2,12 @@
   --primary-color:#ff635e4b;
   margin: .5rem;
   padding:.5rem;
-  background-color: var(--primary-background-color);
+  background: linear-gradient(0.4turn,var(--secondary-color),var(--third-color));
   border: none;
   border-radius: 1rem;
   cursor: pointer;
   border: var(--primary-color) solid 1px;
-
+  color: whitesmoke;
 }
 
 .fetchBtn:hover{
@@ -25,7 +25,8 @@ main .input{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary-background-color);
+  /* background-color: var(--secondary-background-color); */
+  background: linear-gradient(var(--primary-background-color), var(--secondary-background-color));  
   color: var(--font-color);
 }
 
@@ -63,12 +64,15 @@ main .input .countrySearch label{
 
 main .input .countrySearch select{
   padding: .25rem;
+  /* background: linear-gradient(0.4turn,var(--primary-color),var(--third-color)); */
   background-color: var(--primary-background-color);
-  color: var(--third-color);
+  color: var(--font-color);
   border-radius: .25rem;
   font-size: 1.25rem;
   border: none;
   text-align: center;
+  font-style: italic;
+  font-weight: 100;
 }
 
 main .input .keywordSearch{
@@ -90,3 +94,6 @@ main .input .keywordSearch input{
   text-align: center;
   border-radius: .25rem;
 }
+
+/**--------------------------END OF INPUT SECTION--------------------------*/
+
