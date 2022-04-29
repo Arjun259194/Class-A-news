@@ -8,9 +8,9 @@
 :root{
   --primary-background-color:aliceblue;
   --secondary-background-color:hsl(209, 100%, 94%);
-  --primary-color:rgb(255, 99, 94);
-  --secondary-color:rgb(60, 255, 158);
-  --third-color:rgb(124, 94, 255);
+  --primary-color:#ff635e;
+  --secondary-color:#3cff9e;
+  --third-color:#7c5eff;
 
   --shadow-color:rgba(0, 0, 0, 0.74);
 

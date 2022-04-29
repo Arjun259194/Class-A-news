@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,10 +55,14 @@
     <main>
       <section class="input">
         <div class="searchTypeChoice">
-          <label for="ch-country">search news based on country</label>
-          <input type="radio" name="searchTypeChoice" id="ch-country" />
-          <label for="ch-keyword">search news based on keyword</label>
-          <input type="radio" name="searchTypeChoice" id="ch-keyword" />
+          <div>
+            <label for="ch-country">country search</label>
+            <input type="radio" name="searchTypeChoice" id="ch-country" />
+          </div>
+          <div>
+            <label for="ch-keyword">keyword search</label>
+            <input type="radio" name="searchTypeChoice" id="ch-keyword" />
+          </div>
         </div>
 
         <div class="countrySearch">
@@ -67,13 +72,14 @@
             <option value="us">U.S</option>
             <option value="cn">Canada</option>
           </select>
+          <button class="fetchBtn">Fetch News</button>
         </div>
 
         <div class="keywordSearch">
           <label for="keyWordInput">Search with a key word</label>
           <input type="text" id="keyWordInput" />
+          <button class="fetchBtn">Fetch News</button>
         </div>
-
       </section>
     </main>
 

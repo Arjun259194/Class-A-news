@@ -1,0 +1,92 @@
+.fetchBtn{
+  --primary-color:#ff635e4b;
+  margin: .5rem;
+  padding:.5rem;
+  background-color: var(--primary-background-color);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: var(--primary-color) solid 1px;
+
+}
+
+.fetchBtn:hover{
+  border-radius: .5rem;
+  transition: border-radius 500ms ease;
+}
+
+.fetchBtn:active{
+  transform: scale(0.9);
+  transition: transform 200ms ease;
+}
+
+main .input{
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-background-color);
+  color: var(--font-color);
+}
+
+main .input > *{
+  margin: .5rem;
+}
+
+main .input .searchTypeChoice{
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+}
+
+main .input .searchTypeChoice div{
+  display: flex;
+  align-items: center;
+  margin-inline: .5rem;
+}
+
+main .input .searchTypeChoice div > *{
+  margin: 0 .255rem;
+}
+
+main .input .countrySearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .input .countrySearch label{
+  font-weight: 500;
+  padding: .5rem 0;
+}
+
+
+main .input .countrySearch select{
+  padding: .25rem;
+  background-color: var(--primary-background-color);
+  color: var(--third-color);
+  border-radius: .25rem;
+  font-size: 1.25rem;
+  border: none;
+  text-align: center;
+}
+
+main .input .keywordSearch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .input .keywordSearch label{
+  font-weight: 500;
+  padding: .5rem 0;
+}
+
+main .input .keywordSearch input{
+  background-color: var(--primary-background-color);
+  border: none;
+  font-size: 1.25rem;
+  padding: .25rem;
+  text-align: center;
+  border-radius: .25rem;
+}
