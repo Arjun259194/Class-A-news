@@ -148,6 +148,7 @@ main .news-feed article{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
   border-radius: 1rem;
   position: relative;
