@@ -1,16 +1,12 @@
 //*VARIABLES
-
 const newsFeed = document.querySelector('.news-feed');
-let html = ``
-
 const apiKey = 'a481486cec3745ddae53821bb5132799'
 const url = 'https://newsapi.org/v2/top-headlines?'
+let html = ``
 
 //*FUNCTIONS
-
 function appendDataToNewsFeed(data) {
   for (const element of data) {
-
     html += `<article>
               <img src="${element.urlToImage}" alt="" />
               <div class="left">
@@ -25,19 +21,25 @@ function appendDataToNewsFeed(data) {
               </div>
             </article>`
   }
-
   newsFeed.innerHTML = html
 }
 
-//*FETCHING DEFAULT NEWS
+async function defaultNewsLoad() {
+  await fetch(`${url}country=us&apiKey=${apiKey}`)
+    .then(response => response.json())
+    .then(parsedResponse => {
 
-let fetchedData = fetch(`${url}country=us&apiKey=${apiKey}`)
-  .then(response => response.json())
-  .then(parsedResponse => {
+      let articles = parsedResponse['articles']
 
-    let articles = parsedResponse['articles']
+      appendDataToNewsFeed(articles)
 
-    appendDataToNewsFeed(articles)
+    })
+    .catch(err => console.log(err))
+}
 
-  })
-  .catch(err => console.log(err))
+async function keywordNewsSearch() { }
+async function countryNewsSearch() { }
+
+//*CALLING FUNCTIONS
+
+defaultNewsLoad();
