@@ -137,25 +137,37 @@ main .input .keywordSearch input{
 /**------------------------------NEWS SECTION------------------------------*/
 
 main .news-feed{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
-  gap: 1rem;
   background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
 }
 
 main .news-feed article{
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
-  border-radius: 1rem;
   position: relative;
+  display: flex;
+  padding: 1rem;
+}
+
+main .news-feed article:nth-child(even){
+  flex-direction: row-reverse;
 }
 
 main .news-feed article > *{
-  margin: .5rem 0;
+  margin: 1rem;
+}
+
+main .news-feed article img{
+  width: 50%;
+}
+
+main .news-feed article .left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+main .news-feed article .left > *{
+  margin: 1rem 0;
   text-align: center;
   line-height: 1.5rem;
 }
@@ -183,4 +195,5 @@ main .news-feed article div .news-source{
   top: 0;
   left: 0;
   margin: .5rem;
+  opacity: 20%;
 }

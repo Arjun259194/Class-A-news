@@ -12,7 +12,8 @@ function appendDataToNewsFeed(data) {
   for (const element of data) {
 
     html += `<article>
-                <img src="${element.urlToImage}" alt="News image not found" />
+              <img src="${element.urlToImage}" alt="" />
+              <div class="left">
                 <h1>${element.title}</h1>
                 <p>${element.content}</p>
                 <div>
@@ -21,7 +22,8 @@ function appendDataToNewsFeed(data) {
                   <a href="${element.url}" target="blank"><button class="primary-btn">More</button></a>
                   <span class="news-source muted-text">${element.source.name}</span>
                 </div>
-              </article>`
+              </div>
+            </article>`
   }
 
   newsFeed.innerHTML = html
