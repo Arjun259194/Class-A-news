@@ -65,15 +65,18 @@
           <select name="country" id="country">
             <option value="in">India</option>
             <option value="us">U.S</option>
-            <option value="cn">Canada</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+            <option value="cn">China</option>
+            <option value="jp">Japan</option>
           </select>
-          <button class="fetchBtn">Fetch News</button>
+          <button class="fetchBtn" onclick="countryNewsSearch()">Fetch News</button>
         </div>
 
         <div class="keywordSearch">
           <label for="keyWordInput">Search with a key word</label>
           <input type="text" id="keyWordInput" />
-          <button class="fetchBtn">Fetch News</button>
+          <button class="fetchBtn" onclick="keywordNewsSearch()">Fetch News</button>
         </div>
       </section>
 
