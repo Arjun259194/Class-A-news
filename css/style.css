@@ -25,6 +25,26 @@ body {
   border-radius: 1rem;
 }
 
+.theme-toggle{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.theme-toggle svg{
+  width: 3rem;
+  height: 3rem;
+}
+
+.theme-toggle svg g circle{
+  fill: var(--secondary-color);
+}
+
+.theme-toggle svg g g g rect{
+  fill:var(--secondary-background-color);
+}
+
 /**-------------ROOT VARIABLES-------------*/
 :root {
   --primary-background-color: #f0f8ff;
@@ -33,9 +53,9 @@ body {
   --secondary-color: #80ffbf;
   --third-color: #7c5eff;
 
-  --shadow-color: rgba(0, 0, 0, 0.74);
+  --shadow-color: hsla(0, 0%, 0%, 0.74);
 
-  --font-color: rgb(41, 41, 41);
+  --font-color: hsl(0, 0%, 16%);
 
   --border-radios-1: 0.25rem;
   --border-radios-2: 0.5rem;
@@ -49,6 +69,16 @@ body {
 
   --font-family-1: "Ubuntu", sans-serif;
   --font-family-2: "Square Peg", cursive;
+}
+
+.dark-theme{
+  --primary-background-color: hsl(210, 100%, 13%);
+  --secondary-background-color: #1a1a1a;
+  --primary-color: #ff635e;
+  --secondary-color: #80ffbf;
+  --third-color: #7c5eff;
+
+  --font-color: hsl(208, 100%, 97%);
 }
 
 /**------------------UTILITY CLASSIS------------------*/
@@ -114,6 +144,7 @@ body {
 
 .under-lined {
   position: relative;
+  cursor: pointer;
 }
 
 .under-lined::after {
@@ -125,4 +156,11 @@ body {
   bottom: 0;
   left: 0;
   transform: translate(0, 2px);
+  border-radius: 1rem;
+
+  transition: all 500ms ease;
+}
+
+.under-lined:hover::after{
+  background-color: var(--third-color);
 }

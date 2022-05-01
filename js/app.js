@@ -15,7 +15,7 @@ function appendDataToNewsFeed(data) {
               <img src="${element.urlToImage}" alt="article image" />
               <div class="left">
                 <h1>${element.title}</h1>
-                <p>${element.content}</p>
+                <p>${element.content == null ? 'oops! You have to visit the source website':element.content}</p>
                 <div>
                   <span class="muted-text">Author:${element.author}</span>
                   <span class="muted-text">${element.publishedAt}</span>

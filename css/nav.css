@@ -52,4 +52,5 @@ nav .right img{
 nav .right h1 small{
   font-size: 1rem;
   font-weight: 600;
+  color: var(--font-color);
 }
