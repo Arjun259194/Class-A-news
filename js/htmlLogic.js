@@ -3,7 +3,6 @@ let chCountry = document.querySelector('#ch-country');
 let chKeyword = document.querySelector('#ch-keyword');
 let keywordSearch = document.querySelector('.keywordSearch');
 let countrySearch = document.querySelector('.countrySearch');
-let themeToggle = document.querySelector('.theme-toggle');
 
 //*DEFAULT SEARCH OPTION
 countrySearch.style.display = "none";
@@ -19,7 +18,3 @@ chKeyword.addEventListener('click', (e) => {
   countrySearch.style.display = "none";
 })
 
-//*Theme toggle
-themeToggle.addEventListener('click',e=>{
-  document.body.classList.toggle('dark-theme')
-})
