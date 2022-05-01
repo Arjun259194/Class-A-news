@@ -150,7 +150,7 @@ main .news-feed article:nth-child(even) {
 }
 
 main .news-feed article > * {
-  margin: 1rem;
+  margin: 2rem 1rem;
 }
 
 main .news-feed article img {
