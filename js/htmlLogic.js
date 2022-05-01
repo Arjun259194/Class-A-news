@@ -8,12 +8,12 @@ let countrySearch = document.querySelector('.countrySearch');
 countrySearch.style.display = "none";
 
 //*EVENT LISTENER
-chCountry.addEventListener('click',(e)=>{
+chCountry.addEventListener('click', (e) => {
   keywordSearch.style.display = "none";
   countrySearch.style.display = "flex";
 })
 
-chKeyword.addEventListener('click',(e)=>{
+chKeyword.addEventListener('click', (e) => {
   keywordSearch.style.display = "flex";
   countrySearch.style.display = "none";
 })
