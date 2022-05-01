@@ -23,7 +23,7 @@
 /**--------------------HEAD-TITLE------------------------*/
 
 main .head-title {
-  padding: 1rem;
+  padding: 5rem 1rem; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,29 +37,30 @@ main .head-title > * {
 
 main .head-title h2 {
   font-family: var(--font-family-2);
-  font-size: 4rem;
+  font-size: 6rem;
   color: var(--third-color);
 }
 
 main .head-title .head-subTitle,
 main .head-title .head-subTitle > *,
 main .head-title .head-subTitle > * > * {
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-family: var(--font-family-2);
   font-weight: 900;
 }
 
 main .head-title p:not(.head-subTitle) {
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   max-width: 80ch;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 /**--------------------HEAD-TITLE-END------------------------*/
 
 /**-------------------------INPUT SECTION-------------------------*/
 main .input {
-  padding: 0.5rem;
+  padding: 2.5rem 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,7 +145,6 @@ main .news-feed {
 main .news-feed article {
   position: relative;
   display: flex;
-  padding: 1rem;
   color: var(--font-color);
 }
 
