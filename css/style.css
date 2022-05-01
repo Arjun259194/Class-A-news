@@ -6,8 +6,23 @@
   font-family: var(--font-family-1);
 }
 
-body{
+body {
+  overflow: overlay;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 0, 0, 0);
+  margin: 0.25rem 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
 }
 
 /**-------------ROOT VARIABLES-------------*/
@@ -80,11 +95,7 @@ body{
 
 .primary-btn {
   padding: 0.5rem;
-  background: linear-gradient(
-    0.4turn,
-    var(--primary-color),
-    var(--third-color)
-  );
+  background: linear-gradient(0.4turn, var(--primary-color), var(--third-color));
   color: var(--secondary-color);
   border: none;
   border-radius: 1rem;
@@ -115,4 +126,3 @@ body{
   left: 0;
   transform: translate(0, 2px);
 }
-

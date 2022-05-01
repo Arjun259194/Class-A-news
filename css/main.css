@@ -1,8 +1,8 @@
-.fetchBtn{
-  --primary-color:#ff635e4b;
-  margin: .5rem;
-  padding:.5rem;
-  background: linear-gradient(0.4turn,var(--secondary-color),var(--third-color));
+.fetchBtn {
+  --primary-color: #ff635e4b;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: linear-gradient(0.4turn, var(--secondary-color), var(--third-color));
   border-radius: 1rem;
   cursor: pointer;
   border: var(--primary-color) solid 1px;
@@ -10,19 +10,19 @@
   border: none;
 }
 
-.fetchBtn:hover{
-  border-radius: .5rem;
+.fetchBtn:hover {
+  border-radius: 0.5rem;
   transition: border-radius 500ms ease;
 }
 
-.fetchBtn:active{
+.fetchBtn:active {
   transform: scale(0.9);
   transition: transform 200ms ease;
 }
 
 /**--------------------HEAD-TITLE------------------------*/
 
-main .head-title{
+main .head-title {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -30,11 +30,11 @@ main .head-title{
   background-color: var(--primary-background-color);
 }
 
-main .head-title > *{
-  margin: .25rem 0;
+main .head-title > * {
+  margin: 0.25rem 0;
 }
 
-main .head-title h2{
+main .head-title h2 {
   font-family: var(--font-family-2);
   font-size: 4rem;
   color: var(--third-color);
@@ -42,13 +42,13 @@ main .head-title h2{
 
 main .head-title .head-subTitle,
 main .head-title .head-subTitle > *,
-main .head-title .head-subTitle > * > *{
+main .head-title .head-subTitle > * > * {
   font-size: 2rem;
   font-family: var(--font-family-2);
   font-weight: 900;
 }
 
-main .head-title p:not(.head-subTitle){
+main .head-title p:not(.head-subTitle) {
   line-height: 1.5rem;
   max-width: 80ch;
   text-align: center;
@@ -57,34 +57,34 @@ main .head-title p:not(.head-subTitle){
 /**--------------------HEAD-TITLE-END------------------------*/
 
 /**-------------------------INPUT SECTION-------------------------*/
-main .input{
-  padding: .5rem;
+main .input {
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* background-color: var(--secondary-background-color); */
-  background: linear-gradient(var(--primary-background-color), var(--secondary-background-color));  
+  background: linear-gradient(var(--primary-background-color), var(--secondary-background-color));
   color: var(--font-color);
 }
 
-main .input > *{
-  margin: .5rem;
+main .input > * {
+  margin: 0.5rem;
 }
 
-main .input .searchTypeChoice{
+main .input .searchTypeChoice {
   display: flex;
   align-items: center;
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
-main .input .searchTypeChoice div{
+main .input .searchTypeChoice div {
   display: flex;
   align-items: center;
-  margin-inline: .5rem;
+  margin-inline: 0.5rem;
 }
 
-main .input .searchTypeChoice div > *{
-  margin: 0 .255rem;
+main .input .searchTypeChoice div > * {
+  margin: 0 0.255rem;
 }
 
 main .input .countrySearch {
@@ -93,18 +93,17 @@ main .input .countrySearch {
   align-items: center;
 }
 
-main .input .countrySearch label{
+main .input .countrySearch label {
   font-weight: 500;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
-
-main .input .countrySearch select{
-  padding: .25rem;
+main .input .countrySearch select {
+  padding: 0.25rem;
   /* background: linear-gradient(0.4turn,var(--primary-color),var(--third-color)); */
   background-color: var(--primary-background-color);
   color: var(--font-color);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   font-size: 1.25rem;
   border: none;
   text-align: center;
@@ -112,67 +111,66 @@ main .input .countrySearch select{
   font-weight: 100;
 }
 
-main .input .keywordSearch{
+main .input .keywordSearch {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main .input .keywordSearch label{
+main .input .keywordSearch label {
   font-weight: 500;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
-main .input .keywordSearch input{
+main .input .keywordSearch input {
   background-color: var(--primary-background-color);
   border: none;
   font-size: 1.25rem;
-  padding: .25rem;
+  padding: 0.25rem;
   text-align: center;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 /**--------------------------END OF INPUT SECTION--------------------------*/
 
 /**------------------------------NEWS SECTION------------------------------*/
 
-main .news-feed{
-  background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
+main .news-feed {
+  background: linear-gradient(var(--secondary-background-color), var(--primary-background-color));
 }
 
-main .news-feed article{
+main .news-feed article {
   position: relative;
   display: flex;
   padding: 1rem;
 }
 
-main .news-feed article:nth-child(even){
+main .news-feed article:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-main .news-feed article > *{
-  margin: 1rem;
+main .news-feed article > * {
+  margin: 2rem 1rem;
 }
 
-main .news-feed article img{
+main .news-feed article img {
   width: 50%;
 }
 
-main .news-feed article .left{
+main .news-feed article .left {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-
-main .news-feed article .left > *{
+main .news-feed article .left > * {
   margin: 1rem 0;
   text-align: center;
   line-height: 1.5rem;
 }
 
-main .news-feed article img{
+main .news-feed article img {
   min-width: 50%;
   max-width: 85%;
   height: auto;
@@ -180,20 +178,20 @@ main .news-feed article img{
   margin-top: 1rem;
 }
 
-main .news-feed article div{
+main .news-feed article div {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-main .news-feed article div span{
-  text-align:left;
+main .news-feed article div span {
+  text-align: left;
 }
 
-main .news-feed article div .news-source{
+main .news-feed article div .news-source {
   position: absolute;
   top: 0;
   left: 0;
-  margin: .5rem;
+  margin: 0.5rem;
   opacity: 20%;
 }

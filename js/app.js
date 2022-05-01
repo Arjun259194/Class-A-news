@@ -12,7 +12,7 @@ function appendDataToNewsFeed(data) {
   html = ''
   for (const element of data) {
     html += `<article>
-              <img src="${element.urlToImage}" alt="" />
+              <img src="${element.urlToImage}" alt="article image" />
               <div class="left">
                 <h1>${element.title}</h1>
                 <p>${element.content}</p>
