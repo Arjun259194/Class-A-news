@@ -47,6 +47,7 @@ nav .right img{
   aspect-ratio: 1/1;
   height: 2.5rem;
   border-radius: var(--border-radios-2);
+  border: var(--secondary-color) 2px solid;
 }
 
 nav .right h1 small{
