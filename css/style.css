@@ -6,7 +6,7 @@
   font-family: var(--font-family-1);
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -80,11 +80,7 @@ body{
 
 .primary-btn {
   padding: 0.5rem;
-  background: linear-gradient(
-    0.4turn,
-    var(--primary-color),
-    var(--third-color)
-  );
+  background: linear-gradient(0.4turn, var(--primary-color), var(--third-color));
   color: var(--secondary-color);
   border: none;
   border-radius: 1rem;
@@ -115,4 +111,3 @@ body{
   left: 0;
   transform: translate(0, 2px);
 }
-
