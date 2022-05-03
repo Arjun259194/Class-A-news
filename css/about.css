@@ -28,12 +28,6 @@ main section article:nth-child(2){
 
 main section article h2,
 main section article p ,
-main section article span{
-  /* text-align: center; */
-}
-
-main section article h2,
-main section article p ,
 main section article ol,
 main section article span{
   line-height: 2rem;

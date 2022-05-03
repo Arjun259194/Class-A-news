@@ -1,0 +1,23 @@
+main{
+  background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
+}
+
+main section{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main section:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+main section img{
+  border-radius: 1rem;
+  border: var(--font-color) 2px solid;
+}
+
+main section h2{
+  font-family: var(--font-family-2);
+  font-size: 5rem;
+}
