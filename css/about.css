@@ -1,0 +1,52 @@
+main{
+  background: linear-gradient(var(--primary-background-color),var(--secondary-background-color));
+  color: var(--font-color);
+}
+
+main section {
+  display: flex;
+  padding: 0.5rem;
+}
+
+main section:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+main section article {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+main section article:nth-child(2){
+  padding: 2rem;
+  /* text-align: left; */
+  align-content: flex-end;
+}
+
+main section article h2,
+main section article p ,
+main section article span{
+  /* text-align: center; */
+}
+
+main section article h2,
+main section article p ,
+main section article ol,
+main section article span{
+  line-height: 2rem;
+}
+
+main section article h2{
+  font-family: var(--font-family-2);
+  font-size: 3rem;
+}
+
+
+/*--------------------------------OVERWRITING FOOTER--------------------------------*/
+
+footer {
+  background: linear-gradient( var(--secondary-background-color),var(--primary-background-color));
+}
