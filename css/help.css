@@ -1,23 +1,28 @@
-main{
-  background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
-}
-
 main section{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background: linear-gradient(var(--primary-background-color),var(--secondary-background-color));
 }
 
 main section:nth-child(even){
   flex-direction: row-reverse;
+  background: var(--secondary-background-color);
+}
+
+main section:nth-child(3){
+  background: linear-gradient(var(--secondary-background-color),var(--primary-background-color));
 }
 
 main section img{
   border-radius: 1rem;
   border: var(--font-color) 2px solid;
+  background-color: white;
 }
 
-main section h2{
+main section h2,
+main section h2 span{
   font-family: var(--font-family-2);
   font-size: 5rem;
+  color: var(--font-color);
 }
