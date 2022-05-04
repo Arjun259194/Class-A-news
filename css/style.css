@@ -1,3 +1,39 @@
+/**-------------ROOT VARIABLES-------------*/
+:root {
+  --primary-background-color: #f0f8ff;
+  --secondary-background-color: #add6fd;
+  --primary-color: #ff635e;
+  --secondary-color: #80ffbf;
+  --third-color: #7c5eff;
+
+  --shadow-color: hsla(0, 0%, 0%, 0.74);
+
+  --font-color: hsl(0, 0%, 16%);
+
+  --border-radios-1: 0.25rem;
+  --border-radios-2: 0.5rem;
+  --border-radios-3: 1rem;
+  --border-radios-4: 1.5rem;
+
+  --padding-1: 0.5rem;
+  --padding-2: 1rem;
+  --padding-3: 1.25rem;
+  --padding-4: 1.5rem;
+
+  --font-family-1: "Ubuntu", sans-serif;
+  --font-family-2: "Square Peg", cursive;
+}
+
+.dark-theme{
+  --primary-background-color: hsl(210, 100%, 13%);
+  --secondary-background-color: #1a1a1a;
+  --primary-color: #ff635e;
+  --secondary-color: #80ffbf;
+  --third-color: #7c5eff;
+
+  --font-color: hsl(208, 100%, 97%);
+}
+
 /**-------------GLOBAL STYLING-------------*/
 * {
   margin: 0;
@@ -45,41 +81,6 @@ body {
   fill:var(--font-color);
 }
 
-/**-------------ROOT VARIABLES-------------*/
-:root {
-  --primary-background-color: #f0f8ff;
-  --secondary-background-color: #add6fd;
-  --primary-color: #ff635e;
-  --secondary-color: #80ffbf;
-  --third-color: #7c5eff;
-
-  --shadow-color: hsla(0, 0%, 0%, 0.74);
-
-  --font-color: hsl(0, 0%, 16%);
-
-  --border-radios-1: 0.25rem;
-  --border-radios-2: 0.5rem;
-  --border-radios-3: 1rem;
-  --border-radios-4: 1.5rem;
-
-  --padding-1: 0.5rem;
-  --padding-2: 1rem;
-  --padding-3: 1.25rem;
-  --padding-4: 1.5rem;
-
-  --font-family-1: "Ubuntu", sans-serif;
-  --font-family-2: "Square Peg", cursive;
-}
-
-.dark-theme{
-  --primary-background-color: hsl(210, 100%, 13%);
-  --secondary-background-color: #1a1a1a;
-  --primary-color: #ff635e;
-  --secondary-color: #80ffbf;
-  --third-color: #7c5eff;
-
-  --font-color: hsl(208, 100%, 97%);
-}
 
 /**------------------UTILITY CLASSIS------------------*/
 
