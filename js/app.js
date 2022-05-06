@@ -15,7 +15,7 @@ function appendDataToNewsFeed(data) {
               <img src="${element.urlToImage}" alt="article image" />
               <div class="left">
                 <h1>${element.title}</h1>
-                <p>${element.content == null ? 'oops! You have to visit the source website':element.content}</p>
+                <p>${element.content == null ? 'oops! You have to visit the source website' : element.content}</p>
                 <div>
                   <span class="muted-text">Author:${element.author}</span>
                   <span class="muted-text">${element.publishedAt}</span>
@@ -28,6 +28,14 @@ function appendDataToNewsFeed(data) {
   newsFeed.innerHTML = html
 }
 
+function filterArticle(keyword, obj) {
+  keyword = keyword.toLowerCase();
+  const asArray = Object.entries(obj);
+  const filtered = asArray.filter(([key, value]) => value.title.toLowerCase().includes(keyword));
+
+  return Object.fromEntries(filtered);
+}
+
 async function defaultNewsLoad() {
   await fetch(`${url}country=us&apiKey=${apiKey}`)
     .then(response => response.json())
@@ -38,7 +46,7 @@ async function defaultNewsLoad() {
       appendDataToNewsFeed(articles)
 
     })
-    .catch(err => alert(err))
+    .catch(err => alert(err));
 }
 
 
@@ -51,24 +59,21 @@ async function keywordNewsSearch() {
     .then(response => response.json())
     .then(json => {
       let articles = json['articles']
-      appendDataToNewsFeed(articles)
+
+      let filteredArticles = filterArticle(keyword, articles);
+
+      appendDataToNewsFeed(filteredArticles);
     })
-    .catch(err => alert(err))
+    .catch(err => alert(err));
 }
 
-
 async function countryNewsSearch() {
-  // 'https://newsapi.org/v2/top-headlines?country=us&apiKey=a481486cec3745ddae53821bb513279
   let country = countryName.value
-
   await fetch(`${url}country=${country}&apiKey=${apiKey}`)
     .then(response => response.json())
     .then(parsedResponse => {
-
       let articles = parsedResponse['articles']
-
       appendDataToNewsFeed(articles)
-
     })
     .catch(err => alert(err))
 }
